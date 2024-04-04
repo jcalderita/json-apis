@@ -1,0 +1,15 @@
+meta {
+  name: CardsByLanguage
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.magicthegathering.io/v1/cards?language=Spanish
+  body: none
+  auth: none
+}
+
+query {
+  language: Spanish
+}

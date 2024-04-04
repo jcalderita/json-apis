@@ -1,0 +1,17 @@
+meta {
+  name: characters
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{API_BASE_URL}}/v1/public/characters?apikey={{API_PUBLIC_KEY}}&hash={{HASH}}&ts={{TS}}
+  body: none
+  auth: none
+}
+
+query {
+  apikey: {{API_PUBLIC_KEY}}
+  hash: {{HASH}}
+  ts: {{TS}}
+}
