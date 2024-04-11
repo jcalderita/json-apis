@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Races",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
