@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "FirstAPIVapor",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

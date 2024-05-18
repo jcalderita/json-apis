@@ -1,0 +1,25 @@
+meta {
+  name: Update
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://127.0.0.1:8080/people/update
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Giorgina",
+    "email": "ljfddfaj@pjra.com",
+    "address": "Pamplona"
+  }
+}
+
+body:multipart-form {
+  name: Pedrito
+  email: loquesea@gmail.com
+  address: Pompaelo
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Delete
+  type: http
+  seq: 3
+}
+
+delete {
+  url: http://127.0.0.1:8080/people/delete
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Giorgina",
+    "email": "ljfddfaj@pjra.com"
+  }
+}
+
+body:multipart-form {
+  name: Pedrito
+  email: loquesea@gmail.com
+  address: Pompaelo
+}
