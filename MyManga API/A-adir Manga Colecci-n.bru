@@ -1,0 +1,24 @@
+meta {
+  name: A-adir Manga Colecci-n
+  type: http
+  seq: 20
+}
+
+post {
+  url: https://mymanga-acacademy-5607149ebe3d.herokuapp.com/collection/manga
+  body: json
+  auth: none
+}
+
+headers {
+  App-Token: sLGH38NhEJ0_anlIWwhsz1-LarClEohiAHQqayF0FY
+}
+
+body:json {
+  {
+      "manga": 42,
+      "completeCollection": false,
+      "volumesOwned": [1,2,3,4,5,6],
+      "readingVolume": 4
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: B-squeda Manga CUSTOM -P-
+  type: http
+  seq: 16
+}
+
+post {
+  url: https://mymanga-acacademy-5607149ebe3d.herokuapp.com/search/manga
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "searchTitle": "dragon",
+      "searchDemographics": ["Shounen", "Seinen"],
+      "searchContains": true
+  }
+}

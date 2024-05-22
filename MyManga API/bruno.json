@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "MangaDB ACAcademy",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

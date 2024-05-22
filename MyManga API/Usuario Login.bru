@@ -1,0 +1,27 @@
+meta {
+  name: Usuario Login
+  type: http
+  seq: 18
+}
+
+post {
+  url: https://mymanga-acacademy-5607149ebe3d.herokuapp.com/users/login
+  body: json
+  auth: basic
+}
+
+headers {
+  App-Token: sLGH38NhEJ0_anlIWwhsz1-LarClEohiAHQqayF0FY
+}
+
+auth:basic {
+  username: jcfmunoz@icloud.com
+  password: 12345678
+}
+
+body:json {
+  {
+      "email": "jcfmunoz@icloud.com",
+      "password": "12345678"
+  }
+}
