@@ -1,0 +1,17 @@
+meta {
+  name: Pedidos realizados por un usuario
+  type: http
+  seq: 14
+}
+
+post {
+  url: https://trantorapi-acacademy.herokuapp.com/api/shop/orders
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "email": "jcfmunoz@icloud.com"
+  }
+}

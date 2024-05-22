@@ -1,0 +1,17 @@
+meta {
+  name: Pedir los libros destacados
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://trantorapi-acacademy.herokuapp.com/api/books/latest
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "email": "jcfmunoz@icloud.com"
+  }
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Crear un usuario
+  type: http
+  seq: 6
+}
+
+post {
+  url: https://trantorapi-acacademy.herokuapp.com/api/client
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "name": "Julio César Fernández",
+      "email": "jcfmunoz@icloud.com",
+      "location": "Mi casa",
+      "role": "admin"
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: Nuevo pedido de libros de un usuario
+  type: http
+  seq: 12
+}
+
+post {
+  url: https://trantorapi-acacademy.herokuapp.com/api/shop/newOrder
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "email": "jcfmunoz@icloud.com",
+      "pedido": [338, 873]
+  }
+}

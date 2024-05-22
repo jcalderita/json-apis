@@ -1,0 +1,17 @@
+meta {
+  name: Libros le-dos por un usuario
+  type: http
+  seq: 11
+}
+
+post {
+  url: https://trantorapi-acacademy.herokuapp.com/api/client/readedBooks
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "email": "jcfmunoz@icloud.com"
+  }
+}

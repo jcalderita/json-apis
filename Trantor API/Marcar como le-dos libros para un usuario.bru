@@ -1,0 +1,18 @@
+meta {
+  name: Marcar como le-dos libros para un usuario
+  type: http
+  seq: 9
+}
+
+post {
+  url: https://trantorapi-acacademy.herokuapp.com/api/client/readQuery
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "email": "jcfmunoz@icloud.com",
+      "books": [566, 626, 810]
+  }
+}

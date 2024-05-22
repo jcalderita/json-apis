@@ -1,0 +1,20 @@
+meta {
+  name: Actualizar un usuario
+  type: http
+  seq: 7
+}
+
+put {
+  url: https://trantorapi-acacademy.herokuapp.com/api/client
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "name": "Julio César Fernández Muñoz",
+      "email": "jcfmunoz@icloud.com",
+      "location": "Mi casa",
+      "role": "admin"
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: Libros le-dos y comprados por un usuario
+  type: http
+  seq: 10
+}
+
+post {
+  url: https://trantorapi-acacademy.herokuapp.com/api/client/reportBooksUser
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "email": "jcfmunoz@icloud.com"
+  }
+}
