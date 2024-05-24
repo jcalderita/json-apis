@@ -1,0 +1,15 @@
+meta {
+  name: projectByEmail
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://127.0.0.1:8080/people/projectByEmail?email=jcalderita@gmail.com
+  body: multipartForm
+  auth: none
+}
+
+query {
+  email: jcalderita@gmail.com
+}

@@ -1,18 +1,20 @@
 meta {
-  name: Create Course
+  name: update
   type: http
-  seq: 8
+  seq: 3
 }
 
-post {
-  url: http://127.0.0.1:8080/courses/create
+put {
+  url: http://127.0.0.1:8080/people/update
   body: json
   auth: none
 }
 
 body:json {
   {
-    "name": "Vision developer program"
+    "name": "Giorgina",
+    "email": "ljfddfaj@pjra.com",
+    "address": "Pamplona"
   }
 }
 

@@ -1,0 +1,27 @@
+meta {
+  name: joinProject
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://127.0.0.1:8080/people/joinProject
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Anee",
+    "email": "lddfaaj@pjra.com",
+    "course": {
+      "id": 1
+    }
+  }
+}
+
+body:multipart-form {
+  name: Pedrito
+  email: loquesea@gmail.com
+  address: Pompaelo
+}

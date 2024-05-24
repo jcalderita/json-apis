@@ -1,22 +1,18 @@
 meta {
-  name: Create
+  name: join
   type: http
-  seq: 1
+  seq: 2
 }
 
-post {
-  url: http://127.0.0.1:8080/people/create
+put {
+  url: http://127.0.0.1:8080/courses/join
   body: json
   auth: none
 }
 
 body:json {
   {
-    "name": "Anee",
-    "email": "lddfaaj@pjra.com",
-    "course": {
-      "id": 1
-    }
+    "name": "Vision developer program"
   }
 }
 

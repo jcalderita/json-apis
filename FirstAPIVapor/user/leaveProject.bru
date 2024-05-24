@@ -1,11 +1,11 @@
 meta {
-  name: Update
+  name: leaveProject
   type: http
-  seq: 2
+  seq: 5
 }
 
-put {
-  url: http://127.0.0.1:8080/people/update
+delete {
+  url: http://127.0.0.1:8080/people/leaveProject
   body: json
   auth: none
 }
@@ -13,8 +13,7 @@ put {
 body:json {
   {
     "name": "Giorgina",
-    "email": "ljfddfaj@pjra.com",
-    "address": "Pamplona"
+    "email": "ljfddfaj@pjra.com"
   }
 }
 

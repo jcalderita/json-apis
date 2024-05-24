@@ -1,0 +1,23 @@
+meta {
+  name: create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:8080/courses/create
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Vision developer program"
+  }
+}
+
+body:multipart-form {
+  name: Pedrito
+  email: loquesea@gmail.com
+  address: Pompaelo
+}
