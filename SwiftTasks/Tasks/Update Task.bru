@@ -1,0 +1,28 @@
+meta {
+  name: Update Task
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/api/tasks/:taskID
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "Updated Task",
+    "dueDate": "2024-06-01",
+    "summary": "Updated Summary",
+    "progress": 50,
+    "priority": 2,
+    "state": "inprogress",
+    "projectID": "projectUUID",
+    "categoryID": "categoryUUID"
+  }
+}

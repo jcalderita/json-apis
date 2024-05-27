@@ -1,0 +1,11 @@
+meta {
+  name: Query Subtasks by Name
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://localhost:8080/api/tasks/subtasksByName/:taskName
+  body: none
+  auth: none
+}

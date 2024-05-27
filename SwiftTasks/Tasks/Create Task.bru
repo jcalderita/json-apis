@@ -1,0 +1,28 @@
+meta {
+  name: Create Task
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/api/tasks
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "New Task",
+    "dueDate": "2024-06-01",
+    "summary": "Task Summary",
+    "progress": 0,
+    "priority": 1,
+    "state": "todo",
+    "projectID": "projectUUID",
+    "categoryID": "categoryUUID"
+  }
+}

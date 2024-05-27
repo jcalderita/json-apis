@@ -1,0 +1,19 @@
+meta {
+  name: Add Tags to Task
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8080/api/tasks/:taskID/tags
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  ["Tag1", "Tag2"]
+}
