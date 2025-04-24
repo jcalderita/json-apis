@@ -1,0 +1,17 @@
+meta {
+  name: post -v2-rest-performer-search
+  type: http
+  seq: 6
+}
+
+post {
+  url: https://stapi.co/api/v2/rest/performer/search
+  body: formUrlEncoded
+  auth: none
+}
+
+params:query {
+  ~pageNumber: 
+  ~pageSize: 
+  ~sort: 
+}

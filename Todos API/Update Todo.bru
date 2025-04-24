@@ -1,0 +1,22 @@
+meta {
+  name: Update Todo
+  type: http
+  seq: 4
+}
+
+patch {
+  url: http://localhost:8080/api/todos/B4F516EC-F732-4BE4-9E3F-22D9DCF4DDF0
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "title": "Updated Todo",
+    "completed": true
+  }
+}

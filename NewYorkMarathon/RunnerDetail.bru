@@ -1,0 +1,15 @@
+meta {
+  name: RunnerDetail
+  type: http
+  seq: 8
+}
+
+post {
+  url: https://rmsprodapi.nyrr.org/api/v2/runners/details
+  body: json
+  auth: none
+}
+
+body:json {
+  {"runnerId":37996207}
+}

@@ -1,0 +1,19 @@
+meta {
+  name: Update Task
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{baseUrl}}/api/tasks/:taskID
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Updated Task Name",
+    "dueDate": "2023-12-31",
+    "summary": "Updated Task Summary"
+  }
+}

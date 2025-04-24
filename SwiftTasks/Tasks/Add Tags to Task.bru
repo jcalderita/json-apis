@@ -1,0 +1,18 @@
+meta {
+  name: Add Tags to Task
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{baseUrl}}/api/tasks/:taskID/tags
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    "tag1",
+    "tag2"
+  ]
+}

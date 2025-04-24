@@ -1,0 +1,11 @@
+meta {
+  name: Query Tasks by Project Name
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{baseUrl}}/api/tasks/byProjectName/:project
+  body: none
+  auth: none
+}

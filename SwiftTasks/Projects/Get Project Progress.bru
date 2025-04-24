@@ -1,0 +1,11 @@
+meta {
+  name: Get Project Progress
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{baseUrl}}/api/projects/:name/progress
+  body: none
+  auth: none
+}

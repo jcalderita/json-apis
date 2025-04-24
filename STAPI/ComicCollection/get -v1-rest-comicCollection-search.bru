@@ -1,0 +1,16 @@
+meta {
+  name: get -v1-rest-comicCollection-search
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://stapi.co/api/v1/rest/comicCollection/search
+  body: none
+  auth: none
+}
+
+params:query {
+  ~pageNumber: 
+  ~pageSize: 
+}

@@ -1,0 +1,11 @@
+meta {
+  name: Get Tasks by Tags
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/api/tags/tasks/:name
+  body: none
+  auth: none
+}

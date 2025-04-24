@@ -1,0 +1,15 @@
+meta {
+  name: test
+  type: http
+  seq: 12
+}
+
+post {
+  url: https://rmsprodapi.nyrr.org/api/v2/events/search
+  body: json
+  auth: none
+}
+
+body:json {
+  {"sortColumn":"StartDateTime","sortDescending":1,"pageIndex":1,"pageSize":100}
+}

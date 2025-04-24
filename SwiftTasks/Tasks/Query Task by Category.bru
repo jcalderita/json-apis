@@ -1,0 +1,11 @@
+meta {
+  name: Query Task by Category
+  type: http
+  seq: 9
+}
+
+get {
+  url: {{baseUrl}}/api/tasks/byCategory/:categoryName
+  body: none
+  auth: none
+}

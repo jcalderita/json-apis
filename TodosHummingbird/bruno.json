@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "TodosHummingbird",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

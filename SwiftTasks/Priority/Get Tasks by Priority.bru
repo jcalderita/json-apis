@@ -1,0 +1,11 @@
+meta {
+  name: Get Tasks by Priority
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/api/priority/tasks/:name
+  body: none
+  auth: none
+}

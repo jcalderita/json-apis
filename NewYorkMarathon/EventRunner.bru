@@ -1,0 +1,15 @@
+meta {
+  name: EventRunner
+  type: http
+  seq: 6
+}
+
+post {
+  url: https://rmsprodapi.nyrr.org/api/v2/runners/eventRunner
+  body: json
+  auth: none
+}
+
+body:json {
+  {"eventCode":"M2023","bib":"4"}
+}

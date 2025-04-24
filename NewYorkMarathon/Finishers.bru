@@ -1,0 +1,19 @@
+meta {
+  name: Finishers
+  type: http
+  seq: 5
+}
+
+post {
+  url: https://rmsprodapi.nyrr.org/api/v2/runners/finishers-filter
+  body: json
+  auth: none
+}
+
+body:json {
+  // {"eventCode":"M2023","searchString":null,"handicap":null,"sortColumn":"overallTime","sortDescending":false,"pageIndex":10,"pageSize":10}
+  // {"eventCode":"M2023","searchString":null,"handicap":"P","sortColumn":"overallTime","sortDescending":false,"pageIndex":1,"pageSize":51}
+  // {"eventCode":"M2023","searchString":null,"handicap":"H","sortColumn":"overallTime","sortDescending":false,"pageIndex":1,"pageSize":51}
+  // {"eventCode":"M2023","searchString":null,"countryCode":null,"stateProvince":null,"city":null,"teamName":null,"teamCode":null,"gender":null,"ageFrom":null,"ageTo":null,"overallPlaceFrom":null,"overallPlaceTo":null,"paceFrom":null,"paceTo":null,"overallTimeFrom":null,"overallTimeTo":null,"gunTimeFrom":null,"gunTimeTo":null,"ageGradedTimeFrom":null,"ageGradedTimeTo":null,"ageGradedPlaceFrom":null,"ageGradedPlaceTo":null,"ageGradedPerformanceFrom":null,"ageGradedPerformanceTo":null,"handicap":null,"sortColumn":"overallTime","sortDescending":false,"pageIndex":10,"pageSize":51}
+  {"eventCode":"22SHAPE","overallPlaceFrom":"1","sortColumn":"overallTime","sortDescending":false,"pageIndex":2,"pageSize":100}
+}

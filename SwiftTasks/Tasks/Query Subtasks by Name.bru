@@ -1,0 +1,11 @@
+meta {
+  name: Query Subtasks by Name
+  type: http
+  seq: 10
+}
+
+get {
+  url: {{baseUrl}}/api/tasks/subtasksByName/:taskName
+  body: none
+  auth: none
+}

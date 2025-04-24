@@ -1,0 +1,11 @@
+meta {
+  name: Query Task by Name
+  type: http
+  seq: 8
+}
+
+get {
+  url: {{baseUrl}}/api/tasks/byName/:taskName
+  body: none
+  auth: none
+}

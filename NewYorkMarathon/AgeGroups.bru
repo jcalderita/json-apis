@@ -1,0 +1,15 @@
+meta {
+  name: AgeGroups
+  type: http
+  seq: 4
+}
+
+post {
+  url: https://rmsprodapi.nyrr.org/api/v2/common/eventAgeGroups
+  body: json
+  auth: none
+}
+
+body:json {
+  {"eventCode":"M2023"}
+}

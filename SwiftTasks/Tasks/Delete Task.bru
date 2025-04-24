@@ -1,0 +1,11 @@
+meta {
+  name: Delete Task
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{baseUrl}}/api/tasks/:taskID
+  body: none
+  auth: none
+}
