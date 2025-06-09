@@ -11,9 +11,16 @@ post {
 }
 
 body:json {
-  // {"eventCode":"M2023","searchString":null,"handicap":null,"sortColumn":"overallTime","sortDescending":false,"pageIndex":10,"pageSize":10}
+  // {"eventCode":"M2023","searchString":null,"handicap":null,"sortColumn":"overallTime","sortDescending":false,"pageIndex":1,"pageSize":100}
   // {"eventCode":"M2023","searchString":null,"handicap":"P","sortColumn":"overallTime","sortDescending":false,"pageIndex":1,"pageSize":51}
   // {"eventCode":"M2023","searchString":null,"handicap":"H","sortColumn":"overallTime","sortDescending":false,"pageIndex":1,"pageSize":51}
   // {"eventCode":"M2023","searchString":null,"countryCode":null,"stateProvince":null,"city":null,"teamName":null,"teamCode":null,"gender":null,"ageFrom":null,"ageTo":null,"overallPlaceFrom":null,"overallPlaceTo":null,"paceFrom":null,"paceTo":null,"overallTimeFrom":null,"overallTimeTo":null,"gunTimeFrom":null,"gunTimeTo":null,"ageGradedTimeFrom":null,"ageGradedTimeTo":null,"ageGradedPlaceFrom":null,"ageGradedPlaceTo":null,"ageGradedPerformanceFrom":null,"ageGradedPerformanceTo":null,"handicap":null,"sortColumn":"overallTime","sortDescending":false,"pageIndex":10,"pageSize":51}
-  {"eventCode":"22SHAPE","overallPlaceFrom":"1","sortColumn":"overallTime","sortDescending":false,"pageIndex":2,"pageSize":100}
+  // {"eventCode":"22SHAPE","overallPlaceFrom":"1","sortColumn":"overallTime","sortDescending":false,"pageIndex":2,"pageSize":100}
+  {
+    "eventCode": "M2023",
+    "sortColumn": "overallPlace",
+    "pageIndex": 1,
+    "pageSize": 100,
+    "overallPlaceFrom":"30000"
+  }
 }
